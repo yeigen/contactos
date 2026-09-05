@@ -11,18 +11,18 @@ const Home = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
+        <IonToolbar color="primary">
           <IonTitle>Contacticos</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen className="ion-padding">
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Contacticos</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <div>
-          <img src="/perrazo.webp" alt="Perro" />
+        <div className="ion-text-center">
+          <img src="/perrazo.webp" alt="Perro" className="home-logo ion-margin-bottom" />
           {isLoading
             ? <Loader />
             : (
